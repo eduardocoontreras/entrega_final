@@ -1,0 +1,11 @@
+//mixin
+@mixin boton{
+    display: inline-block;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    background-color: rgb(41, 41, 44);
+    text-align: center;
+    text-decoration: none;
+}

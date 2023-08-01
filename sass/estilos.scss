@@ -1,0 +1,103 @@
+@import "./variables";
+@import "./mixin";
+@import "./extend";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //falta elegir fuentes de texto
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+ }
+
+ .navbar-light .navbar-nav .nav-link.colorBlanco{
+    color: white;
+ }
+
+ .navbar-light .navbar-nav .nav-link.colorAzul{
+    color: $color-nav;
+ }
+
+ header{
+    div{
+        .botonMiraNuestroStock{
+            @include boton 
+         
+         }
+    }
+ }
+
+ main{
+    section{
+        .opinion{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+          }
+        .contenedorTitulosPrincipales h1{
+            font-size: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem ;
+            text-align: center;
+
+         }
+         .google{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            
+         }
+         
+          .hijoGaleriaOpinion{
+            width: 20%;  
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;  
+            text-align: justify;
+            gap: 5%;
+         
+          }
+         
+          .hijoGaleriaOpinion img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover; 
+            
+         }
+         .galeriaOpinion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+          }
+        div{
+            .contenedorTitulosPrincipales{
+                text-align: center;
+                width: 60%;
+                margin: 0 auto;
+                 padding-top: 3rem;
+                 padding-bottom: 3rem;
+             }
+
+             .cards{
+                width: 70%;
+                align-items: center;
+                justify-content: center;
+                padding-left: 28%;
+             }
+
+        }
+    }
+ }
+
+
+        footer{
+             @extend %footer;
+    
+ }
