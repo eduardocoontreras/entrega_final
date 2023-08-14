@@ -37,15 +37,16 @@ header div .botonMiraNuestroStock {
   text-decoration: none;
 }
 
+main section {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 50px;
+}
 main section .opinion {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   text-align: center;
 }
 main section .contenedorTitulosPrincipales h1 {
   font-size: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   text-align: center;
 }
 main section .google {
@@ -87,6 +88,30 @@ main section div .cards {
   align-items: center;
   justify-content: center;
   padding-left: 28%;
+}
+
+.boton-contacto {
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 450px;
+  height: 400px;
+}
+
+.opinion {
+  margin-bottom: 50px;
+  margin-inline: 20px;
+  border-width: 20px;
+}
+
+footer img {
+  width: 30px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
